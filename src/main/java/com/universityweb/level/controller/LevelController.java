@@ -24,8 +24,7 @@ public class LevelController {
     public ResponseEntity<String> createLevel(@RequestBody LevelRequest levelRequest) {
         levelService.createLevel(levelRequest);
         return ResponseEntity
-                .status(HttpStatus.CREATED)
-                .body("Level created successfully");
+                .status(HttpStatus.CREATED).body("Level created successfully Level created successfully");
     }
 
     @PutMapping("/update")
