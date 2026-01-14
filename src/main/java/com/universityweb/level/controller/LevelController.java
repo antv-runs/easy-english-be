@@ -18,7 +18,8 @@ public class LevelController {
     @PostMapping("create-level")
     public ResponseEntity<String> createLevel(@RequestBody LevelRequest levelRequest) {
         levelService.createLevel(levelRequest);
-        return ResponseEntity.status(HttpStatus.CREATED).body("Level added successfully");
+        return ResponseEntity.status(HttpStatus.CREATED)
+		.body("Level added successfully Level added successfully Level added successfully");
     }
 
     @PostMapping("update-level")
