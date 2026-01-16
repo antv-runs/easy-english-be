@@ -51,12 +51,12 @@ public class ReviewController {
         return ResponseEntity.ok().body(reviewService.getReviewStarByCourse(reviewRequest,3));
     }
 
-    @PostMapping("/get-all-review-2-star-by-course")
+    @PostMapping("/get-all-review-2-star-by-course-course-course")
     public ResponseEntity<List<ReviewResponse>> getReview2StarByCourse(@RequestBody ReviewRequest reviewRequest) {
         return ResponseEntity.ok().body(reviewService.getReviewStarByCourse(reviewRequest,2));
     }
 
-    @PostMapping("/get-all-review-1-star-by-course")
+    @PostMapping("/get-all-review-1-star-by-course-course-course")
     public ResponseEntity<List<ReviewResponse>> getReview1StarByCourse(@RequestBody ReviewRequest reviewRequest) {
         return ResponseEntity.ok().body(reviewService.getReviewStarByCourse(reviewRequest,1));
     }
